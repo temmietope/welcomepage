@@ -30,16 +30,16 @@ class UserProfile extends Component {
     return (
       <main>
         <header>
-          <h1>Welcome</h1>
+          <h2>Welcome {name.first} {name.last}</h2>
         </header>
         <section>
-          Name: {name.first}, {name.last} <br />
-          Gender: {gender} <br />
-          Address: {location.street}, {location.city}, {location.state} <br />
-          Email: {email} <br />
-          Username:{login.username} <br />
-          Date of Birth:{dob.date} <br />
-          PhoneNumber:{phone} <br />
+          <p>Name: {name.first} {name.last}</p>
+          <p> Gender: {gender}</p>
+          <p>Address: {location.street}, {location.city}, {location.state}</p>
+          <p>Email: <span>{email}</span></p>
+          <p>Username: <span>{login.username}</span></p>
+          <p>Date of Birth: {dob.date}</p>
+          <p>PhoneNumber: {phone}</p>
         </section>
       </main>
     );
